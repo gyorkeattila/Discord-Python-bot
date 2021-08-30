@@ -110,6 +110,12 @@ async def warn(ctx,member:discord.Member):
     cursor.close()
     db.close()
 
+#ping
+@client.command()
+async def ping(ctx):
+        embedVar = discord.Embed(title="Bot válaszideje")
+        embedVar.add_field(name="Válaszidő", value=f'{round(client.latency * 1000)}ms', inline=False)
+        await ctx.channel.send(embed=embedVar)
 
 
 client.run('Discord Token')
