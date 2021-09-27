@@ -174,4 +174,16 @@ async def avatar(ctx,user:discord.Member=None):
     await ctx.channel.send(embed = embed)
 
 
-client.run('Discord Token')
+#rangadó
+@client.command()
+@has_permissions(administrator=True)
+async def rank(ctx, user: discord.Member, *, role: discord.Role ):
+    await user.add_roles(role)
+
+async def rank_error(ctx,error):
+    if isinstance(error, MissingPermissions):
+        embed = discord.Embed(title=f"Hiba",description=f"Nincs jogod ehhez {ctx.message.author.mention}")
+        await ctx.send(embed = embed)
+
+    
+ client.run('Discord Token')
