@@ -180,6 +180,7 @@ async def avatar(ctx,user:discord.Member=None):
 async def rank(ctx, user: discord.Member, *, role: discord.Role ):
     await user.add_roles(role)
 
+#rank hiba
 async def rank_error(ctx,error):
     if isinstance(error, MissingPermissions):
         embed = discord.Embed(title=f"Hiba",description=f"Nincs jogod ehhez {ctx.message.author.mention}")
