@@ -3,9 +3,17 @@ from typing import AsyncIterator, DefaultDict
 import discord
 from discord.ext import commands
 from discord.ext.commands import has_permissions, MissingPermissions
-
-import datetime
-
+from discord import Intents
+from discord import Streaming
+from discord.message import Message
+from discord.utils import get
+from discord.ext import commands
+from discord.ext import commands
+from discord.utils import get
+from datetime import datetime as dt
+import datetime 
+import asyncio
+import random
 
 intents = discord.Intents.all() 
 client = commands.Bot(command_prefix='=', intents = intents)
@@ -15,7 +23,23 @@ client = commands.Bot(command_prefix='=', intents = intents)
 async def on_ready():
     global indulas
     indulas = datetime.datetime.now()
+    #await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="CloudForest"))
     print('Szia Uram')
+
+async def ch_pr():
+ await client.wait_until_ready()
+
+ statuses = ["CloudForest",f"Jelenleg aktív: {len(client.guilds)} szerveren","Segítségedre van szügséged? Használd a =help parancsot!"]
+
+ while not client.is_closed():
+
+   status = random.choice(statuses)
+
+   await client.change_presence(activity=discord.Game(name=status))
+
+   await asyncio.sleep(5)
+
+client.loop.create_task(ch_pr())
 
 #ban 
 @client.command()
@@ -72,13 +96,15 @@ async def unban_error(ctx,error):
 @client.command()
 async def peace(ctx):
     await ctx.channel.send("https://c.tenor.com/DnY4rvDpLDwAAAAd/nileseyy-niles-disappear.gif")
+    await ctx.message.delete()
 
 
-#warn
+#szebben
 @client.command()
-@has_permissions(administrator=True)
-async def warn(ctx,member:discord.Member):
-    
+async def szebben(ctx):
+    await ctx.channel.send("https://cdn.discordapp.com/attachments/836884833137197086/959766756136726578/251825539_947756359154335_5990587876465328001_n.jpg")
+    await ctx.message.delete()
+
 
 #ping
 @client.command()
@@ -87,16 +113,6 @@ async def ping(ctx):
         embedVar.add_field(name="Válaszidő", value=f'{round(client.latency * 1000)}ms', inline=False)
         await ctx.channel.send(embed=embedVar)
 
-
-#uptime
-@client.command()
-async def uptime(ctx):
-    now = datetime.datetime.now()
-    uptime = indulas - now
-    uptime = datetime.timedelta.strftime(uptime, '%d nap %H óra %M perc %S másodperc')
-    embedVar = discord.Embed(title="Bot futási ideje")
-    embedVar.add_field(name="Idő", value = uptime, inline=False)
-    await ctx.channel.send(embed=embedVar)
 
 
 
@@ -116,12 +132,18 @@ async def avatar(ctx,user:discord.Member=None):
 @has_permissions(administrator=True)
 async def rank(ctx, user: discord.Member, *, role: discord.Role ):
     await user.add_roles(role)
+    await ctx.channel.send("A kért rangot sikeresen hozzá adtam az adott felhasználóhoz")
 
 #rank hiba
 async def rank_error(ctx,error):
     if isinstance(error, MissingPermissions):
         embed = discord.Embed(title=f"Hiba",description=f"Nincs jogod ehhez {ctx.message.author.mention}")
         await ctx.send(embed = embed)
-
+    
+#clean
+@client.command()
+async def clean(ctx, limit: int):
+        await ctx.channel.purge(limit=limit)
+        await ctx.message.delete()
     
  client.run('Discord Token')
