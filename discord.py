@@ -1,4 +1,3 @@
-
 from typing import AsyncIterator, DefaultDict
 import discord
 from discord.ext import commands
@@ -92,19 +91,6 @@ async def unban_error(ctx,error):
         await ctx.send(embed = embed)
 
 
-#peace
-@client.command()
-async def peace(ctx):
-    await ctx.channel.send("https://c.tenor.com/DnY4rvDpLDwAAAAd/nileseyy-niles-disappear.gif")
-    await ctx.message.delete()
-
-
-#szebben
-@client.command()
-async def szebben(ctx):
-    await ctx.channel.send("https://cdn.discordapp.com/attachments/836884833137197086/959766756136726578/251825539_947756359154335_5990587876465328001_n.jpg")
-    await ctx.message.delete()
-
 
 #ping
 @client.command()
@@ -113,6 +99,16 @@ async def ping(ctx):
         embedVar.add_field(name="Válaszidő", value=f'{round(client.latency * 1000)}ms', inline=False)
         await ctx.channel.send(embed=embedVar)
 
+'''
+#uptime
+@client.command()
+async def uptime(ctx):
+    now = datetime.datetime.now()
+    uptime = indulas - now
+    uptime = datetime.timedelta.strftime(uptime, '%d nap %H óra %M perc %S másodperc')
+    embedVar = discord.Embed(title="Bot futási ideje")
+    embedVar.add_field(name="Idő", value = uptime, inline=False)
+    await ctx.channel.send(embed=embedVar)'''
 
 
 
@@ -127,7 +123,7 @@ async def avatar(ctx,user:discord.Member=None):
     await ctx.channel.send(embed = embed)
 
 
-#rangadó
+'''#rangadó
 @client.command()
 @has_permissions(administrator=True)
 async def rank(ctx, user: discord.Member, *, role: discord.Role ):
@@ -138,12 +134,19 @@ async def rank(ctx, user: discord.Member, *, role: discord.Role ):
 async def rank_error(ctx,error):
     if isinstance(error, MissingPermissions):
         embed = discord.Embed(title=f"Hiba",description=f"Nincs jogod ehhez {ctx.message.author.mention}")
-        await ctx.send(embed = embed)
+        await ctx.send(embed = embed)'''
     
 #clean
 @client.command()
+@has_permissions(administrator=True)
 async def clean(ctx, limit: int):
         await ctx.channel.purge(limit=limit)
         await ctx.message.delete()
+
+@clean.error
+async def clean_error(ctx,error):
+    if isinstance(error, MissingPermissions):
+        embed = discord.Embed(title=f"Hiba",description=f"Nincs jogod ehhez {ctx.message.author.mention}")
+        await ctx.send(embed = embed)   
     
  client.run('Discord Token')
