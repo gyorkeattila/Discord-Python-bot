@@ -1,7 +1,7 @@
 # discordbot.py
 
 Discord Python bot
-v0.1 Verzió
+v0.3 Verzió
 ___________________________________________
 Jelenleg elérhető parancsok
 
@@ -13,17 +13,21 @@ Jelenleg elérhető parancsok
 
 =unban Felhasználó kitiltásának feloldása [=unban @Felhasználó]
 
-=rank (Átmenetileg szünetel) Kért rang hozzáadása a felhasználónak [=rank @felhasznalónev @rankneve]
+=rank (Ismét működik) Kért rang hozzáadása a felhasználónak [=rank @felhasznalónev @rankneve]
 
 =clean Chat törlése [=clean 10 (sor)]
-
-=warn (Fejlesztés alatt) Adott felhasználó figyelmeztetése
 
 # User parancsok
 
 =ping Bot pingje
 
 =avatar Kért felhasználó avatárjának lekérése [Avatar @felhasználó]
+
+=userinfo [Felhasználó]
+
+=botinfo (Információk a botról)
+
+=say (Szöveg)
 
 
 
