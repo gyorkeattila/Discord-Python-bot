@@ -30,4 +30,5 @@ Jelenleg elérhető parancsok
 =say (Szöveg)
 
 
+![Parancsok](parancsok.png)
 
