@@ -1,0 +1,366 @@
+1;1;Alpár, Fruzsina, Bazil
+1;2;Ábel, Gergely, Vazul
+1;3;Genovéva, Gyöngyvér, Benjámin, Dzsenifer, ((Jennifer))
+1;4;Titusz, Leona, Angéla
+1;5;Simon, Emília
+1;6;Gáspár, Menyhért, Boldizsár
+1;7;Attila, Etele, Ramóna, Rajmund, Bálint
+1;8;Gyöngyvér, Keve, Szeverin, Szörény
+1;9;Marcell, Juliánusz,
+1;10;Melánia, Vilmos, Vilma
+1;11;Ágota, Honoráta
+1;12;Ernő, Erneszta, Tatjána
+1;13;Veronika, Csongor, Yvett
+1;14;Bódog, Félix
+1;15;Lóránt, Loránd, Pál
+1;16;Gusztáv, Marcell
+1;17;Antal, Antónia
+1;18;Margit, Piroska
+1;19;Sára, Márta, Márió
+1;20;Fábián, Sebestyén
+1;21;Ágnes, Agnéta
+1;22;Vince, Artúr
+1;23;Zelma, Rajmund, Emerencia, Emese, Freja, Frej
+1;24;Timót, Ferenc
+1;25;Pál, Henrik
+1;26;Vanda, Paula, Timóteusz
+1;27;Angéla, Angelika
+1;28;Károly, Karola, Tamás
+1;29;Adél, Valér
+1;30;Martina, Gerda, Jácinta
+1;31;Marcella, János
+2;1;Ignác, Brigitta, Kincső, Renátó
+2;2;Karolina, Karola, Aida
+2;3;Balázs, Oszkár, Celerina
+2;4;Ráhel, Csenge, Veronika, András
+2;5;Ágota, Ingrid, Etelka, Léda
+2;6;Dorottya, Dóra, Pál
+2;7;Tódor, Rómeó, Richárd
+2;8;Aranka, Jeromos
+2;9;Abigél, Alex, Apollónia
+2;10;Elvira
+2;11;Bertold, Marietta
+2;12;Lívia, Lídia, Eulália
+2;13;Ella, Linda, Levente, Katalin
+2;14;Bálint, Valentin, Cirill, Metód
+2;15;Kolos, Györgyi, Georgina
+2;16;Julianna, Lilla, Filippa
+2;17;Donát
+2;18;Bernadett, Simon, Zenkő
+2;19;Zsuzsanna, Eliza, Konrád
+2;20;Aladár, Álmos, Leó
+2;21;Eleonóra, Zelmira, Péter
+2;22;Gerzson, Margit, Zétény
+2;23;Alfréd, Polikárp, Mirtill
+2;24;*Mátyás, Jázmin
+2;25;*Mátyás, Jázmin
+2;26;*Géza, Cézár, Vanda
+2;27;*Viktor, Győző
+2;28;*Ákos, Bátor, Gábor,Edina
+2;29;*Elemér, Oszvald, Román
+3;1;Albin, Albina, Leonita,
+3;2;Lujza, �gnes, Henrik, Magor
+3;3;Korn�lia, Kunigunda, Frigyes
+3;4;K�zm�r, L�ciusz, Zor�n
+3;5;Adorj�n, Adri�n
+3;6;Leon�ra, Inez, Koletta, Felicit�sz
+3;7;Tam�s, Perp�tua, Ubul
+3;8;J�nos, Zolt�n, Apolka
+3;9;Franciska, Fanni
+3;10;Ildik�, Emil, Guszt�v
+3;11;Szil�rd, T�mea, Konstantin
+3;12;Gergely, Maximili�n
+3;13;Kriszti�n, Ajtony, Egyed, Patr�cia
+3;14;Matild, Matilda, Trilla
+3;15;Krist�f, Kelemen
+3;16;Henrietta, Herbert
+3;17;Gertr�d, Patrik
+3;18;S�ndor, Ede, Cirill
+3;19;J�zsef, B�nk
+3;20;Klaudia, Alexandra
+3;21;Benedek, Bence, Mikl�s
+3;22;Be�ta, Izolda, Lea
+3;23;Em�ke, Botond, Ott�, Kartal
+3;24;G�bor, Karina
+3;25;Ir�n, �risz, L�cia
+3;26;Em�nuel, Em�nu�la, Lara, Larissza, �rp�d
+3;27;Hajnalka, L�dia, Auguszta
+3;28;Gedeon, Johanna
+3;29;Auguszta, Bertold
+3;30;Zal�n
+3;31;�rp�d, Benj�min, Ben�
+4;1;Hug�, Ag�d
+4;2;�ron, Ferenc
+4;3;Buda, Rich�rd, H�vir�g, Indira
+4;4;Izidor
+4;5;Vince, Ir�n, Teod�ra
+4;6;Vilmos, B�borka, Taksony, Celesztin
+4;7;Herman, J�nos
+4;8;D�nes, Val�r, Valter
+4;9;Erhard, �kos, D�me
+4;10;Zsolt, Ez�kiel
+4;11;Le�, Szaniszl�, Gl�ria
+4;12;Gyula, Baldvin, S�ba, Nara
+4;13;Ida, M�rton, Hermina
+4;14;Tibor
+4;15;Anaszt�zia, Tas, Okt�via
+4;16;Csongor, Bernadett
+4;17;Rudolf, Izid�ra
+4;18;Andrea, Ilma, Apoll�, Alad�r
+4;19;Emma, Malvin, Zseraldina
+4;20;Tivadar, Tiham�r, T�h�t�m
+4;21;Konr�d, Zelmira, Anzelm
+4;22;Csilla, No�mi, K�jusz, No�
+4;23;B�la, Adalbert
+4;24;Gy�rgy, Fid�l, Deb�ra
+4;25;M�rk, �nyos, Mohamed
+4;26;Ervin, Kl�tusz
+4;27;Zita, Mariann, Anaszt�z
+4;28;Val�ria, P�ter
+4;29;P�ter, Katalin, Roberta
+4;30;Katalin, Kitti, Zs�fia, Piusz
+5;1;F�l�p, Jakab, Zsaklin, Jefte, J�zsef, Valburga
+5;2;Zsigmond, Idir, Zo�
+5;3;T�mea, Irma, Jakab, F�l�p
+5;4;M�nika, Fl�ri�n
+5;5;Gy�rgyi, Ir�n
+5;6;Ivett, Frida, Judit, Yvett
+5;7;Gizella, Guszt�v, Bendeg�z, G�lia
+5;8;Mih�ly, Gy�z�
+5;9;Gergely, Katinka, Alberta, �dua, Mira
+5;10;�rmin, P�lma, Izidor
+5;11;Ferenc, S�ra
+5;12;Pongr�c
+5;13;Szerv�c, Imola, Imelda
+5;14;Bonif�c, Gy�ngyi
+5;15;Zs�fia, Szonja, D�n�z
+5;16;M�zes, Botond, J�nos
+5;17;Paszk�l, Ditm�r, Rezeda
+5;18;Erik, Alexandra, J�nos
+5;19;Iv�, Iv�n, Mil�n
+5;20;Bern�t, Bernardin, Fel�cia
+5;21;Konstantin, Andr�s
+5;22;J�lia, Rita, Emil
+5;23;Dezs�, Vilmos, Ren�ta
+5;24;Eszter, Eliza, Vanessza
+5;25;Orb�n, Gergely
+5;26;F�l�p, Evelin
+5;27;Hella, Pelb�rt, �goston
+5;28;Emil, Csan�d, Vilmos
+5;29;Magdolna, Magda, Ervin, L�na
+5;30;Janka, Zsanett, Johanna, N�ndor
+5;31;Ang�la, Petronella
+6;1;T�nde, Jusztinusz
+6;2;K�rmen, Anita, P�ter, Marcellinusz
+6;3;Klotild, Cec�lia, K�roly, Kevin
+6;4;Bulcs�, Ker�ny, Kerubin
+6;5;Fr�zia, Zenke, Fatime, Fatima, Bonif�c
+6;6;Norbert, Norberta, Cintia
+6;7;R�bert, Robertina, Arianna, F�l�p, Roberta
+6;8;Med�rd, Helga
+6;9;F�lix, El�d, Annam�ria, Annabella
+6;10;Margit,Gr�ta
+6;11;Barnab�s, Barang�
+6;12;Vill�, Orfeusz, Adelaida, Duru
+6;13;Antal, Anett
+6;14;Vazul, Elizeus, Herta
+6;15;Jol�n, Vid, Viola, Ariana
+6;16;Jusztin, Jusztina, Aur�liusz
+6;17;Laura, Alida, Alina, Szabolcs, Adolf, Bat�
+6;18;Arnold, Levente, Dolor�za
+6;19;Gy�rf�s, Romuald, Azurea, Zorka
+6;20;Rafael, Dina
+6;21;Alajos, Leila
+6;22;Paulina, Tam�s
+6;23;Zolt�n, Szult�na
+6;24;J�nos, Iv�n
+6;25;Vilmos, Viola, Vilma
+6;26;J�nos, P�l, Cirill
+6;27;L�szl�, S�mson
+6;28;Levente, Ir�n, Ir�neusz
+6;29;P�ter, P�l, Adeliz, Adeliza, Em�ke, Judit, Petra, Szulamit, Ivett
+6;30;P�l
+7;1;Tiham�r, Annam�ria, Oliv�r, �ron
+7;2;Ott�
+7;3;Korn�l, Soma, Tam�s
+7;4;Ulrik, Erzs�bet
+7;5;Emese, Sarolta, Lotti, Antal, Nara
+7;6;Csaba, M�ria
+7;7;Apoll�nia, Vilibald, Bene
+7;8;Ell�k, Edg�r, Eperke, Zs�ka
+7;9;Lukr�cia, Veronika, Hajnalka
+7;10;Am�lia, Melina Engelbert, Ulrika
+7;11;N�ra, Lili, Nelli, Benedek
+7;12;Izabella, Dalma, Eleon�ra
+7;13;Jen�, Henrik
+7;14;�rs, Stella, Kamil
+7;15;�rk�ny, Henrik, Roland, Bonavent�ra, Cseg�
+7;16;Valter, Irma
+7;17;Endre, Elek, Andr�s
+7;18;Sz�m�r, Frigyes, Milla, Hedvig, Mirk�
+7;19;Em�lia
+7;20;Ill�s, Margar�ta
+7;21;D�niel, Daniella, L�rinc
+7;22;Magdolna, M�ria, Magda, Nara
+7;23;Lenke, Brigitta, Apollin�r
+7;24;Kinga, Kunigunda, Kincs�, Krisztina
+7;25;Krist�f, Jakab
+7;26;Panna, Anna, Anik�, Joakim
+7;27;Olga, Lili�na, Nat�lia, Pantaleon
+7;28;Szabolcs, Alina, Ince, Gy�z�
+7;29;M�rta, Fl�ra
+7;30;Judit, X�nia, P�ter
+7;31;Oszk�r, Ign�c, Bat�
+8;1;Bogl�rka, Nimr�d, Alfonz
+8;2;Lehel
+8;3;Hermina, L�dia, Kam�lia, K�ra, Mirtill
+8;4;Domonkos, Dominik, J�nos, Dominika
+8;5;Krisztina
+8;6;Berta, Bettina
+8;7;Ibolya
+8;8;L�szl�, Domonkos
+8;9;Em�d, Rom�n
+8;10;L�rinc, Blanka, Csilla
+8;11;Zsuzsanna, Tiborc, Kl�ra
+8;12;Kl�ra, Hil�ria, Di�na
+8;13;Ipoly, Ince, Vit�lia
+8;14;Marcell, Maximili�n
+8;15;M�ria
+8;16;�brah�m, R�kus
+8;17;J�cint, R�ka, Het�ny
+8;18;Ilona, Rajnald
+8;19;Huba, Mari�n, Em�lia
+8;20;Istv�n, Bern�t
+8;21;S�muel, Hajna, Piusz
+8;22;Menyh�rt, Mirjam
+8;23;Bence, R�za, Szid�nia
+8;24;Bertalan, Aliz, Detre
+8;25;Lajos, Patr�cia
+8;26;Izs�, T�lia, Nat�lia, Zamfira
+8;27;G�sp�r, M�nika
+8;28;�goston, M�zes
+8;29;Beatrix, Erna
+8;30;R�zsa, F�lix, Let�cia
+8;31;Erika, Bella, Arisztid, Szamóca
+9;1;Egyed, Egon, No�mi, Tamara
+9;2;Rebeka, Dorina, Ren�ta, Ingrid, Istv�n, Axel
+9;3;Hilda, Gergely
+9;4;Roz�lia, R�za, Ida
+9;5;Viktor, L�rinc, Of�lia
+9;6;Zakari�s, Be�ta, Br�jen
+9;7;Regina
+9;8;M�ria, Adrienn
+9;9;�d�m, P�ter
+9;10;Nikolett, Hunor, Mikl�s
+9;11;Teod�ra, J�cint, Igor, Helga
+9;12;M�ria, Irma
+9;13;Korn�l, J�nos
+9;14;Szer�na, Rox�na
+9;15;Enik�, Melitta
+9;16;Edit, Cipri�n
+9;17;Zs�fia, R�bert
+9;18;Di�na, J�zsef
+9;19;Vilhelmina, Janu�riusz, Dori�n
+9;20;Friderika
+9;21;M�t�, Mirella, J�n�s
+9;22;M�ric, Tam�s
+9;23;Tekla, L�viusz, Ila, Nara
+9;24;Gell�rt, Gerda, Merc�desz
+9;25;Eufrozina, Kende
+9;26;Jusztina, Kozma, Damj�n
+9;27;Adalbert, Vince
+9;28;Vencel, Salamon
+9;29;Mih�ly, G�bor, Rafael Mirabella
+9;30;Jeromos, Hon�ria, Hunor
+10;1;Malvin, Ter�z
+10;2;Petra, �rs
+10;3;Helga, �vald
+10;4;Ferenc, Hajnalka, Zorka
+10;5;Aur�l, Placid, Attila
+10;6;Br�n�, Ren�ta, Ren�t�
+10;7;Am�lia, Bek�ny
+10;8;Kopp�ny, Benedikta
+10;9;D�nes, J�nos
+10;10;Gedeon, Ferenc, Bendeg�z
+10;11;Brigitta, Placida, Etel, Gitta
+10;12;Miksa, Rezs�, Edvin
+10;13;K�lm�n, Ede, Edv�rd
+10;14;Hel�n, Kaldixtusz
+10;15;Ter�z, Aranka
+10;16;G�l, Margit, Hedvig
+10;17;Hedvig, Ign�c, Rudolf
+10;18;Luk�cs, Jusztusz
+10;19;N�ndor, J�nos, P�l
+10;20;Vendel, Ir�n, Kleop�tra
+10;21;Orsolya, Zsolt
+10;22;El�d, Szal�me, Kord�lia
+10;23;Gy�ngyv�r, J�nos, Gy�ngyi
+10;24;Salamon, Antal
+10;25;Blanka, Bianka, D�lia,Beniel,M�r
+10;26;D�m�t�r, Armand, �rs
+10;27;Szabina, Antonietta
+10;28;Simon, Szimonetta, Szim�na, J�d�s, T�d�
+10;29;N�rcisz, Melinda, �zike
+10;30;Alfonz, Zen�bia
+10;31;Farkas, Rodrig�
+11;1;Marianna
+11;2;Achilles, Bat�
+11;3;Gy�z�, M�rton
+11;4;K�roly, Karola
+11;5;Imre, Zakari�s, T�t�ny
+11;6;L�n�rd
+11;7;Csenger, Rezs�, Ern�, Florentin
+11;8;Zsombor, Kolos, Gottfrid
+11;9;Tivadar
+11;10;R�ka, Andr�s, Le�
+11;11;M�rton, At�d, T�dor
+11;12;J�n�s, Ren�t�, Jozaf�t
+11;13;Szilvia, Szaniszl�
+11;14;Aliz, Vanda, Huba, Klementina
+11;15;Albert, Lip�t
+11;16;�d�n, Margit
+11;17;Hortenzia, Gerg�, D�nes
+11;18;Jen�, No�
+11;19;Erzs�bet
+11;20;Jol�n, Zsolt, �d�n, B�dog
+11;21;Oliv�r
+11;22;Cec�lia, Filemon
+11;23;Kelemen, Klementina, Kolumb�n
+11;24;Emma, Fl�ra, Vir�g, Emmar�za
+11;25;Katalin, Liza, Katinka
+11;26;Vir�g, Szvetlana, Konr�d, Vikt�ria, Milos
+11;27;Virgil, Virg�nia
+11;28;Stef�nia, Jakab
+11;29;Taksony, Ilma, Filom�na
+11;30;Andr�s, Andor, Andrea
+12;1;Elza, Nat�lia, Blanka, Bonita
+12;2;Melinda, Vivien, Aranka
+12;3;Ferenc, Ol�via
+12;4;Borb�la, Barbara, J�nos
+12;5;Vilma, �nige, Csaba
+12;6;Mikl�s, Csinszka, Gyop�r, Gyop�rka
+12;7;Ambrus, Ambr�zia
+12;8;M�ria, Em�ke
+12;9;Nat�lia, Val�ria, Fil�tea
+12;10;Judit, Loretta, Eul�lia
+12;11;�rp�d, �rp�dina, Damazusz
+12;12;Gabriella, Johanna, Franciska
+12;13;Luca, Ot�lia, L�cia, �da, Tilia
+12;14;Szil�rda, Szil�rd, J�nos
+12;15;Val�r, Detre
+12;16;Etelka, Aletta, Adelaida
+12;17;L�z�r, Olimpia
+12;18;Auguszta, Graci�n
+12;19;Viola, Anaszt�z
+12;20;Teofil, Liber�tusz
+12;21;Tam�s, P�ter
+12;22;Z�n�, Fl�ri�n
+12;23;Vikt�ria, J�nos
+12;24;�d�m, �va, Ad�l, No�
+12;25;Eug�nia, Anaszt�zia
+12;26;Istv�n
+12;27;J�nos, Teodor
+12;28;Kamilla, Apor
+12;29;Tam�s, Tamara
+12;30;D�vid, Hunor, Lib�riusz
+12;31;Szilveszter, Don�ta
