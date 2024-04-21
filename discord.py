@@ -219,5 +219,106 @@ async def userinfo(ctx, member: discord.Member=None):
 async def say(ctx, *, text):
     await ctx.send(text)
     await ctx.message.delete()
+
+#szerverinfo
+@bot.command()
+async def serverinfo(ctx):
+    sinfo_embed = discord.Embed(title=f"Információk a szerverről: {ctx.guild.name}", description="Az összes információ a szerverről", color=discord.Color.blue())
+    sinfo_embed.set_thumbnail(url=ctx.guild.icon)
+    sinfo_embed.add_field(name="Szerver neve", value=ctx.guild.name, inline=False)
+    sinfo_embed.add_field(name="ID", value=ctx.guild.id, inline=False)
+    sinfo_embed.add_field(name="Szerver tulajdonos", value=ctx.guild.owner, inline=False)
+    sinfo_embed.add_field(name="Tagok száma", value=ctx.guild.member_count, inline=False)  
+    sinfo_embed.add_field(name="Rangok száma", value=len(ctx.guild.roles), inline=False) 
+    sinfo_embed.add_field(name="Szerver létrehozásának ideje:", value=ctx.guild.created_at.__format__(" %Y/%m/%d %H:%M:%S "), inline=False)
+    sinfo_embed.set_footer(text=f"Lekérezte: {ctx.author} (Python3.9)", icon_url=ctx.author.avatar)
+    await ctx.send(embed=sinfo_embed)
+ 
+#uptime
+@bot.command()
+async def uptime(ctx):
+    uptime = str(datetime.timedelta(seconds=int(round(time.time()-startTime))))
+    u_embed = discord.Embed(title="Bot futási ideje", color=discord.Color.blue())
+    u_embed.set_footer(text=f"Lekérezte: {ctx.author} (Python3.9)", icon_url=ctx.author.avatar)
+    await ctx.send(uptime)
+    await ctx.send(embed=u_embed)
+#invite
+@bot.command(pass_context=True)
+async def invite(ctx):
+  
+  link = await ctx.channel.create_invite(max_age = 0, max_uses = 0)
+  em = discord.Embed(title=f"Csatlakozz a {ctx.guild.name} Discord szerveréhez", url=link, description=f"**Tagok száma: {ctx.guild.member_count} ** [**Csatlakozz**]({link})\n\nHány ember használhatja a linket: **Végtelen\nLink lejárati dátuma: **Soha", color=discord.Color.blue())
+  em.set_footer(text=f"Lekérezte: {ctx.author} (Python3.9)", icon_url=ctx.author.avatar)    
+  em.set_author(name="Szervermeghivó")
+  await ctx.send(f"> {link}", embed=em)
+
+#invitelekérdező
+@bot.command()
+async def osszinvite(ctx):
+    Osszinvite = 0
+    for i in await ctx.guild.invites():
+        if i.inviter == ctx.author:
+            Osszinvite += i.uses
+    await ctx.send(f"{ctx.message.author.mention} {Osszinvite} tagot hívtál meg a szerverre")
+
+#mainevnap
+@bot.command()
+async def mainevnap(ctx):
+    Nevnapoklista = []
+    beolvasottsorok = 0
+    fajl = open('nevnapok.csv', encoding="unicode_escape")
+    for egysor in fajl:
+        egysor = egysor.strip()
+        dbok = egysor.split(";")
+        Nevnapok = {
+            "honap": int(dbok[0]),
+            "nap": int(dbok[1]),
+            "datum": dbok[0] + "." +dbok[1],
+            "nev": dbok[2]
+        }   
+        Nevnapoklista.append(Nevnapok)
+        beolvasottsorok += 1
+    fajl.close()
+    datum= datetime.datetime.now()
+
+    honapnap = str(datum.month)+ "." +str(datum.day)
+    for Nevnapok in Nevnapoklista:
+        if(honapnap == Nevnapok["datum"]):
+            embed = discord.Embed(title=f"A mai névnapok:", description="", color=discord.Color.blue())
+            embed.add_field(name=f"Dátum {honapnap}", value=f"{Nevnapok['nev']}", inline=False)
+            embed.set_footer(text=f"Lekérezte: {ctx.author} (Python3.9)", icon_url=ctx.author.avatar)
+            #print(Nevnapok["nev"])
+            await ctx.send(embed=embed)
+            #await ctx.send(f"A mainevnapok: {Nevnapok['nev']}")
+
+#userid
+@bot.command()
+@has_permissions(administrator=True)
+async def userid(ctx, *, given_name=None):
+    c_embed = discord.Embed(color=discord.Color.blue())
+    for member in ctx.guild.members:
+        if member.name == given_name:
+           wanted_member_id = member.id
+    c_embed.add_field(name=wanted_member_id, value=f"{given_name} felhasználó ID-je", inline=False)
+    c_embed.set_footer(text=f"Lekérezte: {ctx.author} (Python3.9)", icon_url=ctx.author.avatar)        
+
+    await ctx.send(embed=c_embed)
+
+@userid.error
+async def memberid_error(ctx,error):
+    if isinstance(error, MissingPermissions):
+        embed = discord.Embed(title=f"Hiba",description=f"Nincs jogod ehhez {ctx.message.author.mention}")
+        await ctx.send(embed = embed)    
+
+
+@bot.command()
+async def randomwiki(ctx):
+    while True:
+        url = requests.get("https://hu.wikipedia.org/wiki/Special:Random")
+        soup = BeautifulSoup(url.content, "html.parser")
+        title = soup.find(class_="firstHeading").text
+        url = "https://hu.wikipedia.org/wiki/%s" % title
+        await ctx.send(url)
+        break
     
  client.run('Discord Token')
